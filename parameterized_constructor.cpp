@@ -1,6 +1,5 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
 
 class Complex
 {
@@ -15,14 +14,15 @@ public:
     }
 };
 
-// Complex ::Complex(int x, int y) // ----> This is a parameterized constructor as it takes 2 parameters
-// {
-//     a = x;
-//     b = y;
-//     // cout<<"Hello world";
-// }
+Complex ::Complex(int x, int y) // ----> This is a parameterized constructor as it takes 2 parameters
+{
+    a = x;
+    b = y;
+    // cout<<"Hello world";
+}
 
-int main(){
+int main()
+{
     // Implicit call
     Complex a(4, 6);
     a.printNumber();
