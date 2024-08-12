@@ -22,5 +22,6 @@ int main()
 {
     helloworld h1;
     helloworld h2 = h1; // copy constructor invoked
+    helloworld h3(h2);  // copy constructor invoked
     return 0;
 }

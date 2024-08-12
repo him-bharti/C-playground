@@ -44,13 +44,17 @@ void create_scadarecord ::showrecord()
 }
 
 int main()
-{
-    create_scadarecord o1, o2;
+{   
+    int n;
+    cout << "Enter the no. of records to be added in database"<<endl;
+    cin>>n;
+    create_scadarecord o[n];
     // o1.showrecord();
-    o1.adddata();
-    o1.showrecord();
-    o2.adddata();
-    o2.showrecord();
+    for (int i = 0; i < n; i++)
+    {
+        o[i].adddata();
+        o[i].showrecord();
+    }
 
     return 0;
 }
