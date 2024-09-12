@@ -7,10 +7,10 @@ typedef struct game
     int id; // memory 4 byte
     float rating; // memory 4 byte so total = 4+4 =8 bytes
 
-}newtype;
+}namechangevariable;
 
 // typedef is a way of renaming the new user-defined datatype like: int a 
-// for better memory management use unionbcoz it uses only 1 parameter at a time
+// for better memory management use union bcoz it uses only 1 parameter at a time
 union play
 {
     /* data */
@@ -21,7 +21,7 @@ union play
 };
 
 int main(){
-    newtype godofwar;
+    namechangevariable godofwar;
     godofwar.id = 1;
     godofwar.rating = 4.4;
     cout<<godofwar.rating<<endl;
